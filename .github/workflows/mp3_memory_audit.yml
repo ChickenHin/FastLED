@@ -5,18 +5,18 @@ concurrency:
   cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 on:
-  push:
-    branches: [master]
-    paths:
-      - 'src/fl/codec/mp3*'
-      - 'src/third_party/minimp3/**'
-      - 'ci/codec_tables/**'
-      - 'tests/fl/codec/mp3*'
-      - 'tests/fl/codec/minimp3_variants.hpp'
-      - 'tests/profile/mp3_memory_audit.cpp'
-      - 'ci/codec_memory/**'
-      - 'codec_memory_ledger.md'
-      - '.github/workflows/mp3_memory_audit.yml'
+  # push:
+  #   branches: [master]
+  #   paths:
+  #     - 'src/fl/codec/mp3*'
+  #     - 'src/third_party/minimp3/**'
+  #     - 'ci/codec_tables/**'
+  #     - 'tests/fl/codec/mp3*'
+  #     - 'tests/fl/codec/minimp3_variants.hpp'
+  #     - 'tests/profile/mp3_memory_audit.cpp'
+  #     - 'ci/codec_memory/**'
+  #     - 'codec_memory_ledger.md'
+  #     - '.github/workflows/mp3_memory_audit.yml'
   pull_request:
     branches: [master]
     paths:
