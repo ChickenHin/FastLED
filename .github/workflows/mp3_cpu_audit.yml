@@ -5,20 +5,20 @@ concurrency:
   cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 on:
-  push:
-    branches: [master]
-    paths:
-      - 'src/fl/codec/mp3*'
-      - 'src/third_party/minimp3/**'
-      - 'ci/codec_tables/**'
-      - 'tests/fl/codec/mp3*'
-      - 'tests/fl/codec/minimp3_variants.hpp'
-      - 'tests/data/codec/minimp3/**'
-      - 'ci/codec_cpu/**'
-      - 'ci/codec_memory/*_audit.cpp'
-      - 'codec_cpu_trend.json'
-      - 'pyproject.toml'
-      - '.github/workflows/mp3_cpu_audit.yml'
+  # push:
+  #   branches: [master]
+  #   paths:
+  #     - 'src/fl/codec/mp3*'
+  #     - 'src/third_party/minimp3/**'
+  #     - 'ci/codec_tables/**'
+  #     - 'tests/fl/codec/mp3*'
+  #     - 'tests/fl/codec/minimp3_variants.hpp'
+  #     - 'tests/data/codec/minimp3/**'
+  #     - 'ci/codec_cpu/**'
+  #     - 'ci/codec_memory/*_audit.cpp'
+  #     - 'codec_cpu_trend.json'
+  #     - 'pyproject.toml'
+  #     - '.github/workflows/mp3_cpu_audit.yml'
   pull_request:
     branches: [master]
     paths:
