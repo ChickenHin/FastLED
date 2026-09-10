@@ -5,16 +5,16 @@ concurrency:
   cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 on:
-  push:
-    branches: [master]
-    paths:
-      - 'src/fl/codec/mp3*'
-      - 'src/third_party/minimp3/**'
-      - 'ci/codec_conformance/**'
-      - 'ci/codec_tables/**'
-      - 'tests/fl/codec/mp3*'
-      - 'tests/data/codec/minimp3/**'
-      - '.github/workflows/mp3_conformance.yml'
+  # push:
+  #   branches: [master]
+  #   paths:
+  #     - 'src/fl/codec/mp3*'
+  #     - 'src/third_party/minimp3/**'
+  #     - 'ci/codec_conformance/**'
+  #     - 'ci/codec_tables/**'
+  #     - 'tests/fl/codec/mp3*'
+  #     - 'tests/data/codec/minimp3/**'
+  #     - '.github/workflows/mp3_conformance.yml'
   pull_request:
     branches: [master]
     paths:
