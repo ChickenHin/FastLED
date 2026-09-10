@@ -31,8 +31,8 @@ concurrency:
 
 on:
   # 09:00 UTC daily — runs once per day, off-peak for everyone.
-  schedule:
-    - cron: '0 9 * * *'
+  # schedule:
+  #   - cron: '0 9 * * *'
   workflow_dispatch:
 
 permissions:
