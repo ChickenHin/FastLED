@@ -10,8 +10,8 @@ name: project-drift-sync
 # Uses the same GitHub App auth as project_automation.yml.
 
 on:
-  schedule:
-    - cron: "0 3 * * *"
+  # schedule:
+  #   - cron: "0 3 * * *"
   workflow_dispatch:
     inputs:
       include_closed:
