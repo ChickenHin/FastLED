@@ -22,23 +22,23 @@ on:
       - 'library.properties'
       - '.github/workflows/qemu_esp32s3_test.yml'
       - '.github/workflows/qemu_template.yml'
-  push:
-    branches: [master]
-    paths:
-      - 'src/**/*.cpp'
-      - 'src/**/*.h'
-      - 'src/**/*.hpp'
-      - 'examples/**/*.ino'
-      - 'examples/**/*.cpp'
-      - 'examples/**/*.h'
-      - 'ci/**'
-      - 'pyproject.toml'
-      - 'uv.lock'
-      - 'CMakeLists.txt'
-      - 'library.json'
-      - 'library.properties'
-      - '.github/workflows/qemu_esp32s3_test.yml'
-      - '.github/workflows/qemu_template.yml'
+  # push:
+  #   branches: [master]
+  #   paths:
+  #     - 'src/**/*.cpp'
+  #     - 'src/**/*.h'
+  #     - 'src/**/*.hpp'
+  #     - 'examples/**/*.ino'
+  #     - 'examples/**/*.cpp'
+  #     - 'examples/**/*.h'
+  #     - 'ci/**'
+  #     - 'pyproject.toml'
+  #     - 'uv.lock'
+  #     - 'CMakeLists.txt'
+  #     - 'library.json'
+  #     - 'library.properties'
+  #     - '.github/workflows/qemu_esp32s3_test.yml'
+  #     - '.github/workflows/qemu_template.yml'
 
 permissions:
   contents: read
